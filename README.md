@@ -1,10 +1,8 @@
-# Siren - Markdown Workflow Graph
- 
-A React application for creating interactive workflow diagrams where each node contains markdown documents with mermaid sequence diagrams. Transform your documentation into a visual network of interconnected processes.
-
-## Overview
+# Siren - Multi-File Markdown Graph
 
 Siren allows you to organize and visualize complex workflows by connecting markdown documents in an interactive graph interface. Each node represents a markdown file containing process documentation, and edges represent relationships between different workflow steps.
+
+![Siren Interface](assets/siren.png)
 
 ### Key Benefits
 
@@ -170,4 +168,4 @@ MIT License - see [LICENSE.md](LICENSE.md) for details.
 
 ## Contributing
 
-This project transforms documentation into visual knowledge networks. Contributions that enhance the visualization, improve the markdown rendering, or extend the connection capabilities are welcome.
+Make issues.  Submit PRs.  No guarantees, but I will read them.
