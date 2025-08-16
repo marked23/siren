@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(sudo ufw:*)",
+      "Bash(ufw status:*)",
+      "Bash(ss:*)",
+      "Bash(iptables:*)",
+      "Bash(mkdir:*)",
+      "Bash(node:*)",
+      "Bash(npm run build:*)",
+      "Bash(rm:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)",
+      "Bash(code:*)",
+      "Bash(claude mcp:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": []
+  }
+}

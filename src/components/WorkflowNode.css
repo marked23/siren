@@ -1,0 +1,129 @@
+.workflow-node {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.workflow-node.expanded {
+  min-width: 200px;
+  min-height: 120px;
+}
+
+.workflow-node.collapsed {
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.node-content {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.workflow-node.collapsed .node-content {
+  padding: 4px 8px;
+  justify-content: center;
+}
+
+.markdown-content {
+  margin-bottom: 8px;
+}
+
+.workflow-node.collapsed .markdown-content {
+  margin-bottom: 0;
+}
+
+.markdown-content h1 {
+  font-size: 1.1em;
+  margin: 0;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.collapse-icon {
+  font-size: 0.8em;
+  transition: transform 0.2s;
+}
+
+.collapse-icon.collapsed {
+  transform: rotate(-90deg);
+}
+
+.markdown-content p {
+  margin: 4px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.mermaid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  flex: 1;
+  transition: opacity 0.2s ease;
+}
+
+.mermaid-container svg {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+
+/* Orphaned node styling */
+.workflow-node.orphaned {
+  border: 2px dashed #ff6b6b;
+  background: #fff5f5;
+  opacity: 0.8;
+}
+
+.workflow-node.orphaned .markdown-content h1 {
+  color: #d63031;
+}
+
+.orphaned-indicator {
+  color: #e17055;
+  font-size: 0.9em;
+  margin-left: 4px;
+}
+
+/* Error content styling */
+.error-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  background: #fff5f5;
+  border: 1px solid #ffb3b3;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.error-message {
+  color: #d63031;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  font-size: 0.9em;
+}
+
+.error-description {
+  color: #74b9ff;
+  margin: 0;
+  font-size: 0.8em;
+}
